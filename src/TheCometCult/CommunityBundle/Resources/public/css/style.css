@@ -1,7 +1,7 @@
 /* Reset and .clearfix
 ------------------------------------------------------------------------------*/
 
-abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,form,h1,h2,h3,h4,h5,h6,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;list-style-type: none;
+abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,form,h1,h2,h3,h4,h5,h6,hgroup,hr,html,i,iframe,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;list-style-type: none;
 }html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}b,strong{font-weight:bold}img{font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}svg{overflow:hidden}a{cursor:pointer;}
 .clearfix:after, .wrapper:after, main .people article:after, main .people:after {
     visibility: hidden;
@@ -15,17 +15,30 @@ abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,cap
 
 /* Default Styles
 ------------------------------------------------------------------------------*/
+img {
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
 
 html {
-    background: #fff;
+ 
 }
 
 body {
-    background: #fff;
     color: #000;
-    font: 18px sweden_sansregular, Arial, sans-serif;
+    font: 24px;
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricPrecision;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    background-image:
+    linear-gradient(
+      #2ad4e9, #5ad8b4
+    );
+    background-attachment: fixed;
 }
 a {
     text-decoration: none;
@@ -48,8 +61,7 @@ h2 {
 }
 .button {
     display: inline-block;
-    padding: 10px 12px;
-    border: 1px solid #ff0000;
+    padding: 20px 60px;
     text-transform: uppercase;
 }
 input.text {
@@ -60,9 +72,9 @@ input.text {
     -webkit-appearance: none;
     color: #fff;
     font-size: 1em;
-    font-family: sweden_sansregular, Arial, sans-serif;
+     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
+::-webkit-input-placeholde { /* WebKit browsers */
     color: #fff;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -83,7 +95,7 @@ input.submit, button.submit {
     border-radius: 0;
     -webkit-appearance: none;
     font-size: 1em;
-    font-family: sweden_sansregular, Arial, sans-serif;
+     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     margin-left: -4px;
 }
 
@@ -112,9 +124,10 @@ header .column {
 }
 
 header .name h1 {
-    font-size: 1.2em;
+    font-size: 2.8em;
     color: #000000;
     line-height: 1.1em;
+    text-transform: uppercase;
 }
 header .name s {
     color: #ff0000;
@@ -122,7 +135,7 @@ header .name s {
 
 header .description h2 {
     font-size: 1.3em;
-    font-family: sweden_sansbold, Arial, sans-serif;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 header .description a {
@@ -131,17 +144,17 @@ header .description a {
 
 header .join h3 {
     font-size: 1.2em;
+    text-transform: uppercase;
 }
 header .join p {
     margin: 10px 0 10px 0;
 }
 header .join .button {
     margin: 5px 0;
-    color: #ff0000;
 }
 header .join .button {
-    color: #fff;
-    background: #ff0000;
+   color: #000;
+    background: #00FFB8;
 }
 @media (min-width:560px) {
     header .join h3, header .join p {
@@ -192,7 +205,7 @@ header .menu .pages {
         width: 39%;
     }
     header .description h2 {
-        font-size: 1.4em;
+        font-size: 6.4em;
         margin-bottom: 15px;
     }
 
@@ -224,6 +237,8 @@ header .menu .pages {
         clear: none;
         float: left;
         width: 20%;
+        text-transform: uppercase;
+        font-size: 2.6em;
     }
     header .menu ul {
         display: inline-block;
@@ -231,10 +246,12 @@ header .menu .pages {
     }
     header .menu .pages {
         width: 60%;
+
     }
     header .menu ul li {
         display: block;
         line-height: 1.3em;
+
     }
     header .menu ul li:after {
         display: none;
@@ -282,7 +299,7 @@ section.form input:-ms-input-placeholder, section.form textarea:-ms-input-placeh
 
 section.form input, section.form textarea {
     font-size: 16px;
-    font-family: sweden_sansregular, Arial, sans-serif;
+     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     line-height: 25px;
     padding: 10px 12px;
     -webkit-box-sizing: border-box;
@@ -319,7 +336,7 @@ section.form button {
     border: none;
     text-transform: none;
     color: white;
-    font-family: sweden_sansregular, Arial, sans-serif;
+     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     width: 100%;
@@ -418,7 +435,7 @@ section.form button {
     }
 
     section.form.visible, section.form.visible.authorized {
-        height: 320px;
+        height: 360px;
     }
 }
 
@@ -427,8 +444,8 @@ section.form button {
 
 main .people article {
     clear: both;
-    background: #00ff76;
     display: block;
+    margin-left: 35px;
 }
 main .people .image {
     float: left;
@@ -451,9 +468,9 @@ main .people .description p.job {
     font-weight: normal;
 }
 main .people .description a {
-    font-family: sweden_sansbold, Arial, sans-serif;
-}
+    ffont-family:  Futura, "Trebuchet MS", Arial, sans-serif;
 
+}
 main .people li:nth-child(2n) article {
     background: #72ebfc;
 }
@@ -485,7 +502,6 @@ main .people li:nth-child(4n) article {
         max-width: 200px;
     }
     main .people li article {
-        background: #fff !important;
     }
     main .people .image {
         float: none;
@@ -500,7 +516,7 @@ main .people li:nth-child(4n) article {
         height: 240px;
         bottom: -280px;
         left: 0;
-        background: #00ff76;
+        background: #00FFB8;
         z-index: 1;
         padding: 20px;
     }
@@ -561,12 +577,12 @@ main .people li:nth-child(4n) article {
 ------------------------------------------------------------------------------*/
 
 footer {
-    background: #ff0000;
     color: #fff;
     -webkit-font-smoothing: subpixel-antialiased
 }
 footer .wrapper {
     padding: 10px 20px;
+    background: rgb(0, 150, 255);
 }
 footer a {
     color: #fff;
@@ -630,10 +646,10 @@ footer .twitter-share-button {
 ------------------------------------------------------------------------------*/
 
 body.about {
-    background: #fff4e3;
+    background-image:linear-gradient(#2ad4e9, #5ad8b4);
 }
 body.about header {
-    background: #fff;
+
 }
 body.about main .wrapper {
     max-width: 1500px;
@@ -644,14 +660,14 @@ body.about main .wrapper {
 body.about main h2 {
     font-size: 1.4em;
     margin-bottom: 20px;
-    font-family: sweden_sansbold, Arial, sans-serif;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
+
 body.about main p {
     margin-bottom: 50px;
     line-height: 1.4em;
 }
-body.about main a {
-    color: #ff0000;
+body.about main a §    color: #ff0000;
     text-decoration: underline;
 }
 body.about main img {
@@ -667,4 +683,3 @@ body.about main img {
         float: left;
         width: 42%;
     }
-}
