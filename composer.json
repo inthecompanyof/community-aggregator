@@ -51,6 +51,15 @@
         "branch-alias": {
             "dev-master": "2.4-dev"
         }
+        "heroku": {
+            "document-root": "web",
+            "php-config": [
+                "date.timezone=Europe/Amsterdam",
+                "display_errors=off",
+                "short_open_tag=off"
+            ]
+        }
+
     },
     "require-dev": {
         "behat/behat": "2.5.x-dev",
